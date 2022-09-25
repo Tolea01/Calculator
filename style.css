@@ -25,6 +25,7 @@ body {
     border-radius: 15px;
     border: 1px solid rgba(255, 255,255, 0.1);
     box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.37);
+    position: relative;
 }
 
 .calculator-head {
@@ -65,7 +66,7 @@ button {
 }
 
 .second-line {
-    width: 50px;
+    width: 60px;
     height: 50px;
     border-radius: 15px;
     background-color: #606061;
@@ -76,12 +77,22 @@ button {
     color: #cacaca;
 }
 
+.gray-hover:hover {
+    background-color: #303136;
+}
+
 .blue {
     background-color: #005DB2;
     color: #339DFF;
     font-size: 30px;
 }
 
+.blue-hover:hover {
+    background-color: #1991FF;
+    color: #B2DAFF;
+}
+
+/* button "*" */
 .different {
     padding-top: 12px;
 }
@@ -95,6 +106,10 @@ button {
     color: #29A8FF;
 }
 
+.digits-hover:hover {
+    background-color: #606061;
+}
+
 .minus {
     width: 60px;
     height: 50px;
@@ -103,7 +118,7 @@ button {
 
 .plus {
     width: 60px;
-    /* height: 90px; */
+    height: 90px;
     border-radius: 15px;
     grid-column: 4/5;
     grid-row: 4/6;
@@ -116,6 +131,11 @@ button {
 
 .equal {
     border-radius: 15px;
+    height: 77px;
+    width: 60px;
+    position: absolute;
+    bottom: 14px;
+    right: 12px;
 }
 
 .fa-solid {
