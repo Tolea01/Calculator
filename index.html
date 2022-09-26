@@ -14,30 +14,32 @@
 
 <body>
     <div class="calculator">
-        <input type="text" placeholder="0" readonly class="calculator-head">
+        <form name="form">
+            <input type="text" placeholder="0" readonly class="calculator-head" name="textview">
+        </form>
         <div class="calculator-body">
-            <button class="first-line">@</button>
-            <button class="first-line">@</button>
-            <button class="first-line">@</button>
-            <button class="first-line">@</button>
-            <button class="second-line gray gray-hover">AC</button>
-            <button class="second-line gray gray-hover fa-solid fa-delete-left"></button>
-            <button class="second-line blue blue-hover">/</button>
-            <button class="second-line blue blue-hover different">*</button>
-            <button class="digits digits-hover">7</button>
-            <button class="digits digits-hover">8</button>
-            <button class="digits digits-hover">9</button>
-            <button class="minus blue blue-hover">-</button>
-            <button class="digits digits-hover">4</button>
-            <button class="digits digits-hover">5</button>
-            <button class="digits digits-hover">6</button>
-            <button class="plus blue blue-hover">+</button>
-            <button class="digits digits-hover">1</button>
-            <button class="digits digits-hover">2</button>
-            <button class="digits digits-hover">3</button>
-            <button class="digits digits-hover zero">0</button>
-            <button class="digits digits-hover">.</button>
-            <button class="equal blue blue-hover">=</button>
+            <button class="first-line first-line-hover" onclick="insert('**')">^</button>
+            <button class="first-line first-line-hover" onclick="insert('%')">mod</button>
+            <button class="first-line first-line-hover" onclick="insert( '(' )">(</button>
+            <button class="first-line first-line-hover" onclick="insert( ')' )">)</button>
+            <button class="second-line gray gray-hover" onclick="clearAll()">AC</button>
+            <button class="second-line gray gray-hover fa-solid fa-delete-left" onclick="backspace()"></button>
+            <button class="second-line blue blue-hover" onclick="insert('/')">/</button>
+            <button class="second-line blue blue-hover different" onclick="insert('*')">*</button>
+            <button class="digits digits-hover" onclick="insert('7')">7</button>
+            <button class="digits digits-hover" onclick="insert('8')">8</button>
+            <button class="digits digits-hover" onclick="insert('9')">9</button>
+            <button class="minus blue blue-hover" onclick="insert('-')">-</button>
+            <button class="digits digits-hover" onclick="insert('4')">4</button>
+            <button class="digits digits-hover" onclick="insert('5')">5</button>
+            <button class="digits digits-hover" onclick="insert('6')">6</button>
+            <button class="plus blue blue-hover" onclick="insert('+')">+</button>
+            <button class="digits digits-hover" onclick="insert('1')">1</button>
+            <button class="digits digits-hover" onclick="insert('2')">2</button>
+            <button class="digits digits-hover" onclick="insert('3')">3</button>
+            <button class="digits digits-hover zero" onclick="insert('0')">0</button>
+            <button class="digits digits-hover" onclick="insert('.')">.</button>
+            <button class="equal blue blue-hover" onclick="equal()">=</button>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/5067766925.js" crossorigin="anonymous"></script>

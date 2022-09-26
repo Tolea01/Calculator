@@ -31,6 +31,7 @@ body {
 .calculator-head {
     width: 95%;
     height: 130px;
+    transform: translateY(15%);
     text-align: right;
     border: none;
     outline: none;
@@ -63,7 +64,12 @@ button {
     border-radius: 17px;
     background-color: #303136;
     color: #29A8FF;
+    transform: translateY(40%);
 }
+.first-line-hover:hover {
+    background-color: #606061;
+}
+
 
 .second-line {
     width: 60px;
