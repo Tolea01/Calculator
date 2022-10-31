@@ -19,6 +19,13 @@ class calculator {
             document.form.textview.value = eval(calcValue);
         }
     }
+
+    sqrt() {
+        let calcValue = document.form.textview.value;
+        if(calcValue) {
+            document.form.textview.value = Math.sqrt(calcValue);
+        }
+    }
 }
 
 let calc = new calculator();

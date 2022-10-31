@@ -18,7 +18,7 @@ body {
 
 .calculator {
     width: 330px;
-    height: 530px;
+    height: 580px;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -45,12 +45,31 @@ input::placeholder {
     color: #fff;
 }
 
+input {
+    padding-left: 20px;
+}
+
 .calculator-body {
+    position: relative;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6,1fr);
     justify-items: center;
     row-gap: 17px;
+}
+
+.position-absolute {
+    position: absolute;
+    margin-top: -50px;
+}
+
+.elem1 {
+    left: 12px;
+}
+
+.elem2 {
+    left: 93px;
 }
 
 button {
@@ -140,7 +159,7 @@ button {
     height: 77px;
     width: 60px;
     position: absolute;
-    bottom: 14px;
+    bottom: 2px;
     right: 12px;
 }
 

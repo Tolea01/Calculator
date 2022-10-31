@@ -18,8 +18,10 @@
             <input type="text" placeholder="0" readonly class="calculator-head" name="textview">
         </form>
         <div class="calculator-body">
+            <button class="first-line first-line-hover position-absolute elem1" onclick="calc.insert('//')">div</button>
+            <button class="first-line first-line-hover position-absolute elem2" onclick="calc.insert('%')">mod</button>
             <button class="first-line first-line-hover" onclick="calc.insert('**')">^</button>
-            <button class="first-line first-line-hover" onclick="calc.insert('%')">mod</button>
+            <button class="first-line first-line-hover" onclick="calc.sqrt()"><i class="fa-solid fa-square-root-variable"></i></button>
             <button class="first-line first-line-hover" onclick="calc.insert('(')">(</button>
             <button class="first-line first-line-hover" onclick="calc.insert(')')">)</button>
             <button class="second-line gray gray-hover" onclick="calc.clearAll()">AC</button>
